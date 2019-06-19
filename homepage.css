@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'vogue':
+  src: url(Vogue.ttf) format('truetype'),
+}
+@font-face {
+  font-family: 'Annamellia';
+  src: url('Annamellia.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('Helvetica.ttf')
+  format('truetype')
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  border: solid 5px #DADDDF;
+}
+
+.navbar a  /* controls the misc*/{
+  float: left;
+  font-size: 20px;
+  color: black; /* controls the background color*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn /* controls the dropdown when hovered*/{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: pink;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Agenda{
+  text-align: center;
+  font-family: 'Vogue', Fallback, sans-serif;
+  font-size: 250px;
+}
+
+.card-container /* the brown border surrounding <userimput> */{
+  padding: 30px;
+  background: #544A48;
+  justify-content: center;
+}
+
+.name-card /* puts the task below */{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 300px;
+  background: #E78469;
+  background-color: #fff;
+}
+
+.name /* form imput*/{
+  width: 300px;
+  margin: 25px auto 5px auto;
+  padding: 5px;
+  font-size: 90%;
+}
+
+.submit-btn/* submit button format */ {
+  width: 300px;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  border-radius: 2px;
+  color: black;
+  font-size: 100%;
+}

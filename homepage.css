@@ -32,8 +32,12 @@ body {
   text-decoration: none;
 }
 
-
 .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown2 {
   float: left;
   overflow: hidden;
 }
@@ -114,4 +118,49 @@ body {
   border-radius: 2px;
   color: black;
   font-size: 100%;
+}
+
+#optionsasdaysList{
+  width: 300px;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  border-radius: 2px;
+  color: black;
+  font-size: 100%;
+}
+.monday-container{
+  background-color: #FFFF99;
+}
+
+.tuesday-container{
+  background-color: #99FF99;
+}
+
+.wednesday-container{
+background-color: pink;
+}
+
+.thursday-container{
+  background-color: #FFCC99;
+}
+
+.friday-container{
+  background-color: #FFFF99;
+}
+
+.saturday-container{
+  background-color: #99FF99;
+}
+
+.sunday-container{
+  background-color: pink;
+}
+.stickynotes{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 10px;
+  padding: 10px;
+
+
 }

@@ -57,7 +57,7 @@ body {
   text-align: center;
   font-family: 'Vogue', Fallback, sans-serif;
   font-size: 250px;
-  margin-bottom: -60px;
+  margin-bottom: -55px;
   margin-top: 0px;
 }
 
@@ -79,7 +79,7 @@ body {
   font-size: 90%;
 }
 
-.submit-btn/* submit button format */ {
+.submit-btn{
   width: 300px;
   padding: 5px;
   margin: 5px auto 25px auto;
@@ -89,6 +89,15 @@ body {
   padding-left: 30px;
 }
 
+#deletebtn{
+  width: 300px;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  border-radius: 2px;
+  color: black;
+  font-size: 100%;
+  padding-left: 30px;
+}
 .info-stuff{
   width: 300px;
   margin: 25px auto 5px auto;
@@ -152,10 +161,20 @@ background-color: pink;
 .sunday-container{
   background-color: pink;
 }
+.general-container{
+  background-color: #FFCC99;
+}
 .stickynotes{
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 10px;
   padding: 10px;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+.nostrike{
 }

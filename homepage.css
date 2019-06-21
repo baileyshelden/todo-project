@@ -9,12 +9,23 @@
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('Helvetica.ttf')
-  format('truetype')
+  src: url('Helvetica.ttf') format('truetype')
 }
 
+
+/* @font-face {
+  font-family: 'CodeBold';
+  src: url('CODEBold.otf') format("opentype"),
+}
+
+@font-face {
+  font-family: 'CodeLight';
+  src: url('CODELight.otf') format("opentype"),
+} */
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  border
 }
 
 .navbar {
@@ -42,57 +53,12 @@ body {
   overflow: hidden;
 }
 
-.dropdown .dropbtn /* controls the dropdown when hovered*/{
-  font-size: 20px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: white;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: pink;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: grey;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .Agenda{
   text-align: center;
   font-family: 'Vogue', Fallback, sans-serif;
   font-size: 250px;
-}
-
-.card-container /* the brown border surrounding <userimput> */{
-  padding: 30px;
-  background: #544A48;
-  justify-content: center;
+  margin-bottom: -60px;
+  margin-top: 0px;
 }
 
 .name-card /* puts the task below */{
@@ -105,6 +71,8 @@ body {
 }
 
 .name /* form imput*/{
+  margin-right: 10px;
+  padding-right: 10px;
   width: 300px;
   margin: 25px auto 5px auto;
   padding: 5px;
@@ -118,6 +86,31 @@ body {
   border-radius: 2px;
   color: black;
   font-size: 100%;
+  padding-left: 30px;
+}
+
+.info-stuff{
+  width: 300px;
+  margin: 25px auto 5px auto;
+  padding: 5px;
+  font-size: 90%;
+}
+
+.whattodo{
+  margin-bottom: -10px;
+  padding-left: 30px;
+  font-size: 25px;
+}
+.warning{
+  margin-bottom: -10px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.daylabel{
+  margin-bottom: -10px;
+  padding-left: 30px;
+  font-size: 25px;
 }
 
 #optionsasdaysList{
@@ -134,6 +127,10 @@ body {
 
 .tuesday-container{
   background-color: #99FF99;
+}
+
+.monTD{
+    margin-left: 30px;
 }
 
 .wednesday-container{
@@ -161,6 +158,4 @@ background-color: pink;
   grid-template-rows: 300px 300px;
   grid-gap: 10px;
   padding: 10px;
-
-
 }

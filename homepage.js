@@ -6,71 +6,45 @@ var fridaycontainer = $('.friday-container');
 var saturdaycontainer = $('.saturday-container');
 var sundaycontainer = $('.sunday-container')
 var btn = $('.submit-btn');
-var name = $('.name');
+// var deleteall = $('.delete');
 
 btn.on("click", checkDay);
 
 function checkDay(event){
  event.preventDefault();
  var day = $('.info-stuff').val();
+  var name = $('.name').val();
 
   if(day=="monday"){
-    mondaycontainer.append(`<p class="name-card"> -${name} </p>`);
-    $('.name').val("");
-
+  appendDate(mondaycontainer, name);
   } else if(day=="tuesday"){
-    appendTuesday();
+    appendDate(tuesdaycontainer, name);
   } else if(day=="wednesday"){
-    appendWednesday();
+    appendDate(wednsdaycontainer, name);
   } else if(day=="thursday"){
-    appendThursday();
+    appendDate(thursdaycontainer, name);
   } else if(day=="friday"){
-    appendFriday();
+    appendDate(fridaycontainer, name);
   } else if(day=="saturday"){
-    appendSaturday();
+    appendDate(saturdaycontainer, name);
   } else if(day=="sunday") {
-    appendSunday();
+    appendDate(sundaycontainer, name);
   } else{
     appendError();
   }
+}
 
-// function appendMonday(){
+function appendDate(dayContainer, name) {
+  dayContainer.append(`<p class="name-card"> -${name} </p>`);
+    $('.name').val("");
+    $('.info-stuff').val("");
+}
+function appendError(){
+  alert("Error! This is not a valid weekday");  
+  $('.name').val("");
+  $('.info-stuff').val("");
+}
 //
-//   mondaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendTuesday(){
-//   tuesdaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendWednesday(){
-//   wednesdaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendThursday(){
-//   thursdaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendFriday(){
-//   fridaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendSaturday(){
-//   saturdaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendSunday(){
-//   sundaycontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
-// }
-//
-// function appendError(){
-//   errorcontainer.append(`<p class="name-card"> -${name} </p>`);
-//     $('.name').val("");
+// function deleteEverything() {
+//   $(".name-card").remove();
 // }
